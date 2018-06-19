@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<html>
+        <body>
+        <h1>乘法表</h1>
+        <p>请输入 1到 9之间的数字：</p>
+        <input id="demo" type="text">
+        <button type="button" onclick="myFunction1()">生成乘法表</button>
+      
+<script>
+ function myFunction1(){
+  var n=document.getElementById("demo").value; 
+  document.write('<table border="1"cellpadding="9" cellspacing="0" frame="box" align="center">')
+   if(1<=n&&n<=9){
+   for (var i=1;i<=n;i++)
+  {
+   for (var j=1;j<=n;j++)
+    {
+      var n0=i*j;
+      document.write('<td>'+i+"*"+j+"="+n0+'</td>')
+    }
+ document.write('</tr>')
+   }
+document.write('</table>');
+}
+else
+  {
+  alert("输入数字不符合要求!!")
+  }
+}
+ 
+
+ </script>
+ </body>
+</html>
